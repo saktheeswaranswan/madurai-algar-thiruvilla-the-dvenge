@@ -1,0 +1,3 @@
+The above code continues the execution of the YOLOv3 Tiny object detection, including updating the crop counter, drawing bounding boxes and labels, and displaying the frames. Finally, it releases the video capture, closes the CSV file, and destroys any remaining OpenCV windows.
+
+Please note that the CUDA acceleration is applied during the inference step with the help of the cv2.cuda_GpuMat() class and the gpu_blob.upload() method.

@@ -1,0 +1,12 @@
+in this "                image_filename = f"{crop_counter[class_label]}.jpg"
+" wil the id given be saved as imaje croped jpg file
+
+ChatGPT
+No, in the line image_filename = f"{crop_counter[class_label]}.jpg", the crop_counter[class_label] is used as the filename for the cropped image. It does not include the unique ID assigned to the object.
+
+To include the unique ID in the image filename, you can modify the line to:
+
+python
+Copy code
+image_filename = f"{object_id}_{crop_counter[class_label]}.jpg"
+This will generate the image filename using the object_id followed by the crop_counter[class_label].
